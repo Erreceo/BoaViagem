@@ -24,7 +24,7 @@ public class BoaViagemActivity extends Activity {
 
     public void entrarOnClick( View view){
 
-        String usuarioInformado = usuario.getText().toString();
+        String usuarioInformado = usuario.getText().toString().trim();
         String senhaInformada   = senha.getText().toString();
 
         if( "leitor".equals(usuarioInformado) && "123".equals(senhaInformada) ){
