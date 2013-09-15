@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.Spinner;
 
 import java.util.Calendar;
 
@@ -28,6 +30,10 @@ public class GastoActivity extends Activity {
 
         dataGasto = (Button) findViewById(R.id.data);
         dataGasto.setText(dia+"/"+(mes + 1)+"/"+ano);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.categoria_gasto, android.R.layout.simple_spinner_item);
+        Spinner categoria = (Spinner) findViewById(R.id.categoria);
+        categoria.setAdapter(adapter);
     }
 
 
