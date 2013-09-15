@@ -13,5 +13,22 @@
     <string name="minhas_viagens">Minhas Viagens</string>
     <string name="configuracoes">Configurações</string>
     <string name="title_activity_boa_viagem">BoaViagemActivity</string>
+    <string name="title_activity_nova_viagem">MainActivity</string>
+    <string name="nova_viagem">Nova Viagem</string>
+    <string name="destino">Destino</string>
+    <string name="lazer">Lazer</string>
+    <string name="negocios">Negócios</string>
+    <string name="data_da_chegada">Data de chegada</string>
+    <string name="data_da_saida">Data de partida</string>
+    <string name="selecione">Selecione</string>
+    <string name="orcamento">Orçamento</string>
+    <string name="quantidade_de_pessoas">Quantidade de pessoas</string>
+    <string name="salvar">Criar nova viagem</string>
+    <string name="title_activity_gasto">GastoActivity</string>
+    <string name="data">Data</string>
+    <string name="valor">Valor</string>
+    <string name="descricao">Descrição</string>
+    <string name="local">Local</string>
+    <string name="gastei">Gastei!</string>
 
 </resources>
