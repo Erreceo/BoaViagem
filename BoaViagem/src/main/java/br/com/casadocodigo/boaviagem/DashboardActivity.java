@@ -3,6 +3,9 @@ package br.com.casadocodigo.boaviagem;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -16,6 +19,20 @@ public class DashboardActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.dashboard_menu, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onMenuItemSelected( int featureId, MenuItem item){
+        finish();
+        return true;
     }
 
     public void selecionarOpcao( View view ){
