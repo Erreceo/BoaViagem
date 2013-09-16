@@ -31,6 +31,7 @@
     <string name="local">Local</string>
     <string name="gastei">Gastei!</string>
     <string name="categoria">Categoria</string>
+
     <string-array name="categoria_gasto">
         <item>Alimentação</item>
         <item>Conbustível</item>
@@ -38,5 +39,8 @@
         <item>Hospedagem</item>
         <item>Outros</item>
     </string-array>
+
+    <string name="title_activity_viagem_list">ViagemListActivity</string>
+    <string name="title_activity_gasto_list">GastoListActivity</string>
 
 </resources>
