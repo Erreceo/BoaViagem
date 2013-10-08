@@ -5,11 +5,14 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -40,8 +43,23 @@ public class GastoActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.gasto, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.gasto, menu);
         return true;
+    }
+
+    @Override
+    public boolean onMenuItemSelected(int featuredId, MenuItem item){
+        switch (item.getItemId()){
+
+            case R.id.remover_gasto:
+                                Toast.makeText(this, R.string.remover,Toast.LENGTH_LONG).show();
+                                return true;
+            default:
+                                return super.onMenuItemSelected(featuredId,item);
+
+        }
+
     }
 
     public void selecionarData( View view ){

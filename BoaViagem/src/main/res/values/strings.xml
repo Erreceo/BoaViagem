@@ -44,4 +44,5 @@
     <string name="title_activity_gasto_list">GastoListActivity</string>
     <string name="sair">Sair</string>
     <string name="remover_viagem">Remover viagem</string>
+    <string name="remover">Remover</string>
 </resources>
